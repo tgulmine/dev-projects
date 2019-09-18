@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import "./styles/main.scss";
+import { Button } from "reactstrap";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Button color="primary">vo</Button>{" "}
+      <Button outline color="secondary">
+        buta
+      </Button>{" "}
+      <Button color="secondary" size="lg">
+        o
+      </Button>
+      <Button color="success">smash</Button>{" "}
+      <Button color="info">valendo</Button> <Button color="warning">o</Button>{" "}
+      <Button color="danger">oco</Button>
     </div>
   );
-}
+};
 
 export default App;
